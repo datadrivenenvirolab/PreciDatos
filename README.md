@@ -205,7 +205,6 @@ Figure 5. Process flow diagram of a solar energy farm reporting power production
 We use an example of a solar energy farm which is required to report its daily power production. We also assume that this farm is a corporation with 5 executives. Each executive registers their cryptographic identity into an Ethereum smart contract based on Semaphore, a zero-knowledge signalling gadget, so that anyone can anonymously prove their membership in the set and broadcast a counterclaiming signal (Koh, 2019).
 
 We then simulate the following process of the company reporting data, along with a deposit, for five days in a row, and an executive anonymously counterclaiming on data reported on the fifth day. This locks up part of the total deposit. After an investigation (outside the system), an investigator then seizes part of the total amount deposited, and rewards part of the seized funds to a separate address specified by the counterclaimer.
-
 <ol>
  	<li style="text-align: left;"><span style="font-weight: 400;">On day 1, the solar farm publishes their true power readings on a smart contract and deposits 0.1 ETH along with the data.</span></li>
  	<li style="text-align: left;"><span style="font-weight: 400;">The solar farm does the same for days 2, 3, and 4.</span></li>
@@ -223,10 +222,12 @@ We then simulate the following process of the company reporting data, along with
 <h3><span style="font-weight: 400;">Natural Language Processing (NLP) of Actor Disclosures</span></h3>
 
 It is not uncommon for actors to upload ill-formed data (e.g., PDFs or spreadsheets produced by an actor’s Corporate and Social Responsibility department). The process of extracting the data from such non-standard formats is time-consuming and costly. PreciDatos may be extended in a modular fashion with a pre-processing step attempting to run Natural Language Processing (NLP) routines to extract semantic information from unstructured data. The module tackles two goals. Firstly, it identifies structured data (e.g., tables) and extracts it as a dataset. Secondly, it performs sentiment analysis to determine the ambition and scope of the document.
- 
-The first task can be done with spaCy, an open-source library for NLP in python for tasks such as entity recognition and text processing. It is currently the fastest syntactic parser in the world and within 1% of the state-of-the-art (Choi et al., 2015). It can be trained on existing data to perform automated information extraction. The second task can be conducted with the AllenNLP (Gardner et al., 2017) open-source library which contains reference implementations of state-of-the-art NLP models to extract information from a processed dataset to perform sentiment analysis.
- 
-While we do advocate putting commitments and some reporting progress on a blockchain (as described in the previous Section), it would be unreasonable to expect NLP to happen on-chain. We make the assumption here that a trusted server can commit to the data received initially and perform NLP, after which the resulting data can be once again committed on-chain by the trusted party. The assumption of a trusted party does not appear unreasonable given the centrality of climate databases and institutions (e.g., CDP or UNFCCC).
+
+The first task can be done with spaCy, an open-source library for NLP in python for tasks such as entity recognition and text processing. It is currently the fastest syntactic parser in the world and within 1% of the state-of-the-art (Choi et al., 2015). It can be trained on existing data to perform automated information extraction. 
+
+The second task can be conducted with the AllenNLP (Gardner et al., 2017) open-source library which contains reference implementations of state-of-the-art NLP models to extract information from a processed dataset to perform sentiment analysis.
+
+General purpose public blockchains such as Ethereum or Cosmos can run arbitrary programs, as long as the computation is paid for in the native tokens of the chains. While we advocate recording commitments (e.g., a hash of the data) and some reporting progress on a blockchain (as described in the previous Section), NLP routines are computationally intensive, thus ill-suited to be run on the chain. We make the assumption here that a trusted server can commit to the data received initially and perform NLP, after which the resulting data can once again be committed on-chain by the trusted party. The assumption of a trusted party does not appear unreasonable given the centrality of climate databases and institutions (e.g., CDP or UNFCCC).
 
 <h3></h3>
 <h3><span style="font-weight: 400;">Homomorphic Encryption </span></h3>
