@@ -223,9 +223,7 @@ We then simulate the following process of the company reporting data, along with
 
 It is not uncommon for actors to upload ill-formed data (e.g., PDFs or spreadsheets produced by an actor’s Corporate and Social Responsibility department). The process of extracting the data from such non-standard formats is time-consuming and costly. PreciDatos may be extended in a modular fashion with a pre-processing step attempting to run Natural Language Processing (NLP) routines to extract semantic information from unstructured data. The module tackles two goals. Firstly, it identifies structured data (e.g., tables) and extracts it as a dataset. Secondly, it performs sentiment analysis to determine the ambition and scope of the document.
 
-The first task can be done with spaCy, an open-source library for NLP in python for tasks such as entity recognition and text processing. It is currently the fastest syntactic parser in the world and within 1% of the state-of-the-art (Choi et al., 2015). It can be trained on existing data to perform automated information extraction. 
-
-The second task can be conducted with the AllenNLP (Gardner et al., 2017) open-source library which contains reference implementations of state-of-the-art NLP models to extract information from a processed dataset to perform sentiment analysis.
+The first task can be done with spaCy, an open-source library for NLP in python for tasks such as entity recognition and text processing. It is currently the fastest syntactic parser in the world and within 1% of the state-of-the-art (Choi et al., 2015). It can be trained on existing data to perform automated information extraction. The second task can be conducted with the AllenNLP (Gardner et al., 2017) open-source library which contains reference implementations of state-of-the-art NLP models to extract information from a processed dataset to perform sentiment analysis.
 
 General purpose public blockchains such as Ethereum or Cosmos can run arbitrary programs, as long as the computation is paid for in the native tokens of the chains. While we advocate recording commitments (e.g., a hash of the data) and some reporting progress on a blockchain (as described in the previous Section), NLP routines are computationally intensive, thus ill-suited to be run on the chain. We make the assumption here that a trusted server can commit to the data received initially and perform NLP, after which the resulting data can once again be committed on-chain by the trusted party. The assumption of a trusted party does not appear unreasonable given the centrality of climate databases and institutions (e.g., CDP or UNFCCC).
 
@@ -290,6 +288,9 @@ The additional funds to pay for these extra amounts must come from somewhere. We
 <h2></h2>
 <h2></h2>
 <h2><span style="font-weight: 400;">References</span></h2>
+
+Alabdulatif, Abdulatif, et al. "Privacy-preserving anomaly detection in cloud with lightweight homomorphic encryption." Journal of Computer and System Sciences 90 (2017): 28-45.
+
 <span style="font-weight: 400;">Anderson, J. (2015). What you need to know to complete the CDP Supply Chain questionnaire. Available: </span><a href="https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire"><span style="font-weight: 400;">https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire</span></a><span style="font-weight: 400;">.</span>
 
 <span style="font-weight: 400;">Chen, D. (2018). Utility of the blockchain for climate mitigation. The Journal of The British Blockchain Association, 1(1), 3577.</span>
@@ -327,6 +328,8 @@ The additional funds to pay for these extra amounts must come from somewhere. We
 <span style="font-weight: 400;">Kennedy, C., Steinberger, J., Gasson, B., Hansen, Y., Hillman, T., Havranek, M., ... &amp; Mendez, G. V. (2009). Greenhouse gas emissions from global cities. </span><span style="font-weight: 400;">Environmental Science Technology, 43: 7297–7302. </span>
 
 <span style="font-weight: 400;">Koh, W. (2019). To Mixers and Beyond: presenting Semaphore, a privacy gadget built on Ethereum. Available: </span><a href="https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b"><span style="font-weight: 400;">https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b</span></a><span style="font-weight: 400;">.</span>
+
+Lu, Wenjie, Shohei Kawasaki, and Jun Sakuma. "Using Fully Homomorphic Encryption for Statistical Analysis of Categorical, Ordinal and Numerical Data." IACR Cryptology ePrint Archive 2016 (2016): 1163.
 
 <span style="font-weight: 400;">Markolf, S. A., Matthews, H. S., Azevedo, I. L., &amp; Hendrickson, C. (2017). An integrated approach for estimating greenhouse gas emissions from 100 US metropolitan areas. Environmental Research Letters, 12(2), 024003.</span>
 
