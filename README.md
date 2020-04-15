@@ -198,11 +198,14 @@ If the submission (by the organization) was deemed to be fraudulent, the challen
 <h2></h2>
 
 <h2><span style="font-weight: 400;">Proof of Concept: Solar Energy Production</span></h2>
-<img class="wp-image-15855 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/SolarFarm_PreciDatos.png"  /> Figure 5. Process flow diagram of a solar energy farm reporting power production data using the PreciDatos system.
+<img class="wp-image-15855 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/SolarFarm_PreciDatos.png"  /> 
+
+Figure 5. Process flow diagram of a solar energy farm reporting power production data using the PreciDatos system.
 
 We use an example of a solar energy farm which is required to report its daily power production. We also assume that this farm is a corporation with 5 executives. Each executive registers their cryptographic identity into an Ethereum smart contract based on Semaphore, a zero-knowledge signalling gadget, so that anyone can anonymously prove their membership in the set and broadcast a counterclaiming signal (Koh, 2019).
 
-<span style="font-weight: 400;">We then simulate the following process of the company reporting data, along with a deposit, for five days in a row, and an executive anonymously counterclaiming on data reported on the fifth day. This locks up part of the total deposit. After an investigation (outside the system), an investigator then seizes part of the total amount deposited, and rewards part of the seized funds to a separate address specified by the counterclaimer.</span>
+We then simulate the following process of the company reporting data, along with a deposit, for five days in a row, and an executive anonymously counterclaiming on data reported on the fifth day. This locks up part of the total deposit. After an investigation (outside the system), an investigator then seizes part of the total amount deposited, and rewards part of the seized funds to a separate address specified by the counterclaimer.
+
 <ol>
  	<li style="text-align: left;"><span style="font-weight: 400;">On day 1, the solar farm publishes their true power readings on a smart contract and deposits 0.1 ETH along with the data.</span></li>
  	<li style="text-align: left;"><span style="font-weight: 400;">The solar farm does the same for days 2, 3, and 4.</span></li>
