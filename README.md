@@ -161,7 +161,7 @@ Proofs are key in minimizing fraudulent data, and thus are central in any implem
 
 ### Investigation
 
-When a challenge results in an investigation, that investigation should be carried out by an independent auditor using real-world (non-computer) techniques. The auditor, or the auditor selection process, should be pre-agreed upon by the parties in the consortium. Ideally, these auditors should be randomly selected from a pool of qualified auditors. When the investigation is completed, the result of that investigation is input back into the computer system. This input’s primary purpose is to release the amounts locked up in escrow pertaining to the investigation. </span><span style="font-weight: 400;">The input would apportion the fraction of the amount to the challenging party and the submitting party.
+When a challenge results in an investigation, that investigation should be carried out by an independent auditor using real-world (non-computer) techniques. The auditor, or the auditor selection process, should be pre-agreed upon by the parties in the consortium. Ideally, these auditors should be randomly selected from a pool of qualified auditors. When the investigation is completed, the result of that investigation is input back into the computer system. This input’s primary purpose is to release the amounts locked up in escrow pertaining to the investigation. The input would apportion the fraction of the amount to the challenging party and the submitting party.
 
 If the submission (by the organization) was deemed to be fraudulent, the challengers get all of the deposited amount. If the submission was deemed to be correct, the submitter gets all, or some, of the deposited amount. As with other escrow systems, a portion of the deposited amount will go to neither the submitter nor the challenger, and this is used to pay for the investigation. The exact fraction of the deposit which will be paid out, and to whom, can be programmatically configured to reflect an optimal game-theoretic equilibrium.
 
@@ -176,7 +176,6 @@ Organization’s perspective:
 User’s perspective:
 
 <img class="size-full wp-image-15851" src="https://datadrivenlab.org/wp-content/uploads/2020/04/Organisation-copy.png" /> Figure 4. User flow from an individual user’s perspective. The user can view existing claims but must be a verified member of the organization in order to successfully challenge them.
-<h2></h2>
 
 ## Proof of Concept: Solar Energy Production
 
@@ -244,8 +243,6 @@ A key challenge and limitation of this system is that of real world data crossin
 
 Companies participating in a consortium are incentivized directly proportional to the work that has been done. A linear scale, while simple to implement and reason about, does little to incentivize increased commitments or higher targets. Consortia that desire their members to increase their commitments might thus do well to alter their payment calculation rules to incorporate some form of target based or commitment based bonus tier. As with the previous section, the exact design of these incentivization structures are left as a discussion for the readers and implementers of this system, as different specific will work for different consortia, and different industries. For rewards, we advocate the use of climate-specific funds (e.g., carbon offsets) to incentivize honest participation in the system.
 
-<h2></h2>
-
 ## Glossary
 
 **Blockchain** is a particular type of data structure used in some distributed ledgers which stores and transmits data in packages called “blocks” that are connected to each other in a digital “chain”. Blockchain employs cryptographic and algorithmic methods to record and synchronize data across a network in an immutable manner (Natarajan et al., 2017).
@@ -277,15 +274,12 @@ A **signalling gadget** is a toolkit to allow users to register an identity, ver
 **Zero-knowledge proofs** are a method by which one party can prove to another party that they know a value *x*,
 without conveying any information apart from the fact that they know the value *x*.
 
-<h2></h2>
-
 ## References
 
 Alabdulatif, Abdulatif, et al. "Privacy-preserving anomaly detection in cloud with lightweight homomorphic encryption." Journal of Computer and System Sciences 90 (2017): 28-45.
 
 Anderson, J. (2015). What you need to know to complete the CDP Supply Chain questionnaire. Available:
-<a href="https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire">https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire
-</a>.
+[https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire](https://www.greenbiz.com/article/what-you-need-know-complete-cdp-supply-chain-questionnaire).
 
 Chen, D. (2018). Utility of the blockchain for climate mitigation. The Journal of The British Blockchain Association, 1(1), 3577.
 
@@ -294,42 +288,34 @@ Choi, J. D., Tetreault, J., &amp; Stent, A. (2015, July). It depends: Dependency
 ClimateSouth (2018). Cooperative Climate Action: Global Performance &amp; Delivery in the Global South. Preliminary findings of the ClimateSouth Project for the Global Climate Action Summit. Research report published by the African Centre for Technology Studies (ACTS), the Blavatnik School of Government and Global Economic Governance Programme at the University of Oxford, the German Development Institute/Deutsches Institut für Entwicklungspolitik (DIE), TERI University, prepared by the ClimateSouth Project team: Sander Chan, Thomas Hale, Kennedy Mbeva, Manish Shrivastava, Jacopo Bencini, Victoria Chengo, Ganesh Gorti, Lukas Edbauer, Imogen Jacques, Arturo Salazar, Tim Cholibois, Debora Leao Andrade Gouveia, Jose Maria Valenzuela.
 
 Coburn, C. (September 8, 2019). Why industry is going green on the quiet. The Guardian. Available:
-<a href="https://www.theguardian.com/science/2019/sep/08/producers-keep-sustainable-practices-secret">https://www.theguardian.com/science/2019/sep/08/producers-keep-sustainable-practices-secret
-</a>.
+[https://www.theguardian.com/science/2019/sep/08/producers-keep-sustainable-practices-secret](https://www.theguardian.com/science/2019/sep/08/producers-keep-sustainable-practices-secret).
 
 Data-Driven EnviroLab. (2019). National Science Foundation Grant will Support Research on Blockchain’s Potential Climate Action Applications. Available:
-<a href="https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/">https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/
-</a>.
+[https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/](https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/).
 
 Data-Driven EnviroLab. (2020). Collaboration gets Radical at COP-25: Digital Solutions to Tracking Climate Action. Available:
-<a href="https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/">https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/
-</a>.
+[https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/](https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/).
 
 Fong, W. K., Sotos, M., Michael Doust, M., Schultz, S., Marques, A., &amp; Deng-Beck, C. (2015). Global protocol for community-scale greenhouse gas emission inventories (GPC).
 *World Resources Institute: New York, NY, USA*.
-<a href="https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities">https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities
-</a>. 
+[https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities](https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities). 
 
 Gardner, M., Grus, J., Neumann, M., Tafjord, O., Dasigi, P., Liu, N., ... &amp; Zettlemoyer, L. (2018). Allennlp: A deep semantic natural language processing platform. arXiv preprint arXiv:1803.07640.
 
 Herweijer, C., Waughray, D., &amp; Warren, S. (2018). Building Block(chain)s for a Better Planet. In World Economic Forum. Available:
-<a href="http://www3.weforum.org/docs/WEF_Building-Blockchains.pdf">http://www3.weforum.org/docs/WEF_Building-Blockchains.pdf
-</a>.
+[http://www3.weforum.org/docs/WEF_Building-Blockchains.pdf](http://www3.weforum.org/docs/WEF_Building-Blockchains.pdf).
 
 Höhne, N., den Elzen, M., Rogelj, J., Metz, B., Fransen, T., Kuramochi, T., Olhoff, A., Alcamo, J., Winkler, H., Fu, S., Schaeffer, M., Schaeffer, R., Peters, G.P., Maxwell, S. and Dubash, N.K.
 (2020). Emissions: world has four times the work or one-third of the time. Nature. 
 
 Homomorphic Encryption Standard (2017). Applications of Homomorphic Encryption, pp. 5-6. David Archer and Lily Chen and Jung Hee Cheon and Ran Gilad-Bachrach and Roger A. Hallman and Zhicong Huang and Xiaoqian Jiang and Ranjit Kumaresan and Bradley A. Malin and Heidi Sofia and Yongsoo Song and Shuang Wang. Available:
-<a href="http://homomorphicencryption.org/white_papers/applications_homomorphic_encryption_white_paper.pdf">http://homomorphicencryption.org/white_papers/applications_homomorphic_encryption_white_paper.pdf
-</a>.
+[http://homomorphicencryption.org/white_papers/applications_homomorphic_encryption_white_paper.pdf](http://homomorphicencryption.org/white_papers/applications_homomorphic_encryption_white_paper.pdf).
 
 Hotten, R. (10 December 2015). Volkswagen: The scandal explained. BBC News. Available:
-<a href="https://www.bbc.com/news/business-34324772">https://www.bbc.com/news/business-34324772
-</a>. 
+[https://www.bbc.com/news/business-34324772](https://www.bbc.com/news/business-34324772). 
 
 Hsu, A., Cheng, Y., Xu, K., Weinfurter, A., Yick, C., Ivanenko, M., Nair, S., Hale, T., Guy, B., and Rosengarten, C. (2015). The Wider World of Non-state and Sub-national Climate Action. Available:
-<a href="http://datadrivenlab.org/featured/assessing-the-wider-world-of-non-state-and-sub-national-climate-action/">http://datadrivenlab.org/featured/assessing-the-wider-world-of-non-state-and-sub-national-climate-action/
-</a>.
+[http://datadrivenlab.org/featured/assessing-the-wider-world-of-non-state-and-sub-national-climate-action/](http://datadrivenlab.org/featured/assessing-the-wider-world-of-non-state-and-sub-national-climate-action/).
 
 Hsu, A.; Widerberg, O.; Weinfurter, A.; Chan, S.; Roelfsema, M.; Lütkehermöller, K. and Bakhtiari, F. (2018). Bridging the emissions gap - The role of nonstate and subnational actors. In The Emissions Gap Report 2018. A UN Environment Synthesis Report. United Nations Environment Programme. Nairobi.
 
@@ -341,55 +327,43 @@ Kennedy, C., Steinberger, J., Gasson, B., Hansen, Y., Hillman, T., Havranek, M.,
 Environmental Science Technology, 43: 7297–7302. 
 
 Koh, W. (2019). To Mixers and Beyond: presenting Semaphore, a privacy gadget built on Ethereum. Available:
-<a href="https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b">https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b
-</a>.
+[https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b](https://medium.com/coinmonks/to-mixers-and-beyond-presenting-semaphore-a-privacy-gadget-built-on-ethereum-4c8b00857c9b).
 
 Lu, Wenjie, Shohei Kawasaki, and Jun Sakuma. "Using Fully Homomorphic Encryption for Statistical Analysis of Categorical, Ordinal and Numerical Data." IACR Cryptology ePrint Archive 2016 (2016): 1163.
 
 Markolf, S. A., Matthews, H. S., Azevedo, I. L., &amp; Hendrickson, C. (2017). An integrated approach for estimating greenhouse gas emissions from 100 US metropolitan areas. Environmental Research Letters, 12(2), 024003.
 
 Nakamoto, S. (2008). Bitcoin: A peer-to-peer electronic cash system. Available:
-<a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf
-</a>
+[https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
 
 Natarajan, Harish; Krause, Solvej Karla; Gradstein, Helen Luskin. 2017. Distributed Ledger Technology (DLT) and blockchain (English). FinTech note; no. 1. Washington, D.C. : World Bank Group. Available:
-<a href="http://documents.worldbank.org/curated/en/177911513714062215/Distributed-Ledger-Technology-DLT-and-blockchain">http://documents.worldbank.org/curated/en/177911513714062215/Distributed-Ledger-Technology-DLT-and-blockchain
-</a>.
+[http://documents.worldbank.org/curated/en/177911513714062215/Distributed-Ledger-Technology-DLT-and-blockchain](http://documents.worldbank.org/curated/en/177911513714062215/Distributed-Ledger-Technology-DLT-and-blockchain).
 
 NewClimate Institute, Data-Driven Lab, PBL, German Development Institute/Deutsches Institut für Entwicklungspolitik (DIE), Blavatnik School of Government, University of Oxford. Global climate action from cities, regions and businesses: Impact of individual actors and cooperative initiatives on global and national emissions. 2019 edition. Research report prepared by the team of: Takeshi Kuramochi, Swithin Lui, Niklas Höhne, Sybrig Smit, Maria Jose de Villafranca Casas, Frederic Hans, Leonardo Nascimento, Paola Tanguy, Angel Hsu, Amy Weinfurter, Zhi Yi Yeo, Yunsoo Kim, Mia Raghavan, Claire Inciong Krummenacher, Yihao Xie, Mark Roelfsema, Sander Chan, Thomas Hale. Available:
-<a href="http://datadrivenlab.org/wp-content/uploads/2019/11/Report-Global-Climate-Action-from-Cities-Regions-and-Businesses_2019.pdf">http://datadrivenlab.org/wp-content/uploads/2019/11/Report-Global-Climate-Action-from-Cities-Regions-and-Businesses_2019.pdf
-</a>. 
+[http://datadrivenlab.org/wp-content/uploads/2019/11/Report-Global-Climate-Action-from-Cities-Regions-and-Businesses_2019.pdf](http://datadrivenlab.org/wp-content/uploads/2019/11/Report-Global-Climate-Action-from-Cities-Regions-and-Businesses_2019.pdf). 
 
 Portland Bureau of Planning and Sustainability (PBPS). (2015). Climate Action Plan. Available at:
-<a href="https://beta.portland.gov/sites/default/files/2019-07/cap-2015_june30-2015_web_0.pdf"> https://beta.portland.gov/sites/default/files/2019-07/cap-2015_june30-2015_web_0.pdf
-</a>. 
+[ https://beta.portland.gov/sites/default/files/2019-07/cap-2015_june30-2015_web_0.pdf](https://beta.portland.gov/sites/default/files/2019-07/cap-2015_june30-2015_web_0.pdf). 
 
 Power Ledger. (2020). Power Ledger: Our Technology. Available: 
-<a href="https://www.powerledger.io/our-technology/">https://www.powerledger.io/our-technology/
-</a>
+[https://www.powerledger.io/our-technology/](https://www.powerledger.io/our-technology/)
 
 Bhatia, P., Ranganathan, J., and World Business Council for Sustainable Development (WBCSD). (2004). The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard (Revised Edition). Available:
-<a href="https://www.wri.org/publication/greenhouse-gas-protocol">https://www.wri.org/publication/greenhouse-gas-protocol
-</a>.
+[https://www.wri.org/publication/greenhouse-gas-protocol](https://www.wri.org/publication/greenhouse-gas-protocol).
 
 Ramankutty, N., Gibbs, H. K., Achard, F., Defries, R., Foley, J. A., &amp; Houghton, R. A. (2007). Challenges to estimating carbon emissions from tropical deforestation. Global change biology, 13(1), 51-66.
 
 Rust, S. (25 September 2019). Poor corporate emissions data ‘a scandal’, says analysis firm. IPE. Available:
-<a href="https://www.ipe.com/poor-corporate-emissions-data-a-scandal-says-analysis-firm/10033469.article">https://www.ipe.com/poor-corporate-emissions-data-a-scandal-says-analysis-firm/10033469.article
-</a>. 
+[https://www.ipe.com/poor-corporate-emissions-data-a-scandal-says-analysis-firm/10033469.article](https://www.ipe.com/poor-corporate-emissions-data-a-scandal-says-analysis-firm/10033469.article). 
 
 Swytchx. (2019). Swytchx Platorm: A new standard for energy data. Available:
-<a href="https://swytch.io/products">https://swytch.io/products
-</a>
+[https://swytch.io/products](https://swytch.io/products)
 
 United Nation Framework Convention on Climate Change (UNFCCC). (2017). How Blockchain Technology Could Boost Climate Action. Available:
-<a href="https://unfccc.int/news/how-blockchain-technology-could-boost-climate-action">https://unfccc.int/news/how-blockchain-technology-could-boost-climate-action
-</a>.
+[https://unfccc.int/news/how-blockchain-technology-could-boost-climate-action](https://unfccc.int/news/how-blockchain-technology-could-boost-climate-action).
 
 United Nation Framework Convention on Climate Change (UNFCCC). (2020). Global Climate Action Platform:
-<a href="https://climateaction.unfccc.int/">https://climateaction.unfccc.int/
-</a>. 
+[https://climateaction.unfccc.int/](https://climateaction.unfccc.int/). 
 
 Wainstein, M. (2019). Leveraging blockchain for a global, transparent and integrated climate accounting system. Available: 
-<a href="https://07579f97-57bc-4895-8632-76beebc72c0e.filesusr.com/ugd/9909c7_8ee2e5519ba94d55a24f3445082edd50.pdf">https://07579f97-57bc-4895-8632-76beebc72c0e.filesusr.com/ugd/9909c7_8ee2e5519ba94d55a24f3445082edd50.pdf
-</a>.
+[https://07579f97-57bc-4895-8632-76beebc72c0e.filesusr.com/ugd/9909c7_8ee2e5519ba94d55a24f3445082edd50.pdf](https://07579f97-57bc-4895-8632-76beebc72c0e.filesusr.com/ugd/9909c7_8ee2e5519ba94d55a24f3445082edd50.pdf).
