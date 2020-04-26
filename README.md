@@ -32,7 +32,7 @@ Many actors may participate in several different platforms in order to gain acce
 
 Greenhouse gas emissions data, which forms a key part of climate reporting, can be proprietary or confidential. In some governance contexts, emissions data may be politically sensitive. Many companies hesitate to report on or share sustainability innovations, to avoid tipping off potential competitors, out of a concern that customers equate sustainability with cost increases, or out of a fear of inviting scrutiny into other areas of the company’s operations (Coburn, 2019). If a company reports an intensity-based metric alongside baseline or inventory greenhouse gas information, for example, it could be possible for competitors to determine the company’s production costs, or other data that could harm the reporting business’s competitive advantages. CDP, the primary reporting platform for businesses, gives companies the option to report on their climate action commitments privately rather than publicly, a strategy that may help address these concerns.    
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/Screen-Shot-2020-02-27-at-12.37.14-PM.png) Figure 1. Existing processes of data collection, processing, and analysis for commitments to mitigate greenhouse gas emissions, made by cities, regions, companies, and investors.
+![Existing process for data](./figure-existing-processes-for-data.png) Figure 1. Existing processes of data collection, processing, and analysis for commitments to mitigate greenhouse gas emissions, made by cities, regions, companies, and investors.
 
 ## Opportunities for Distributed Ledger Technology (DLT)
 
@@ -69,7 +69,7 @@ There is no obvious reward for actors to implement robust data reporting practic
 
 For honest actors with accurate data: The staked amount is returned in full, with the possibility of including a reward, depending on available funds (see Discussion). For honest actors with inaccurate data: The staked amount covers additional data processing steps should they be required, paying for bounties or open-sourcing the work. For greenwashing actors: The staked amount is used to produce an investigation into the accuracy of the data when counterclaiming takes place. These outcomes are summarized in Figure 2, and described in detail subsequently.
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/pasted-image-0.png) Figure 2. Illustration of the sequence of actions between various actors in the PreciDatos system.
+![PreciDatos actor sequence diagram](./figure-precidatos-actor-sequence-diagram.png) Figure 2. Illustration of the sequence of actions between various actors in the PreciDatos system.
 
 ### Reporting
 
@@ -171,16 +171,15 @@ We provide a demonstration of what a typical user flow might look like from the 
 
 Organization’s perspective:
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/Organisation.png) Figure 3. User flow from an organization’s perspective. The organization has its own page and is able to create and stake its emissions claims.
+![PreciDatos user flow for organisations](./figure-precidatos-user-flow-organisation.png) Figure 3. User flow from an organization’s perspective. The organization has its own page and is able to create and stake its emissions claims.
 
 User’s perspective:
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/Organisation-copy.png) Figure 4. User flow from an individual user’s perspective. The user can view existing claims but must be a verified member of the organization in order to successfully challenge them.
+![PreciDatos user flow for users](./figure-precidatos-user-flow-user.png) Figure 4. User flow from an individual user’s perspective. The user can view existing claims but must be a verified member of the organization in order to successfully challenge them.
 
 ## Proof of Concept: Solar Energy Production
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/SolarFarm_PreciDatos.png)
-
+![PreciDatos PoC diagram](./figure-precidatos-poc-diagram.png)
 Figure 5. Process flow diagram of a solar energy farm reporting power production data using the PreciDatos system.
 
 We use an example of a solar energy farm which is required to report its daily power production. We also assume that this farm is a corporation with 5 executives. Each executive registers their cryptographic identity into an Ethereum smart contract based on Semaphore, a zero-knowledge signalling gadget, so that anyone can anonymously prove their membership in the set and broadcast a counterclaiming signal (Koh, 2019).
@@ -198,7 +197,7 @@ We then simulate the following process of the company reporting data, along with
 
 PreciDatos is built as a modular component to fit in larger operational processes. In the following, we describe possible extensions to complement our data-reporting mechanism. A modular pipeline proposal is presented in Figure 6.
 
-![](https://datadrivenlab.org/wp-content/uploads/2020/04/precidatos-modules.png) Figure 6. Extending PreciDatos with optional modules (dotted blocks).
+![PreciDatos modules](./figure-precidatos-modules.png) Figure 6. Extending PreciDatos with optional modules (dotted blocks).
 
 ### Natural Language Processing (NLP) of Actor Disclosures
 
