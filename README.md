@@ -38,8 +38,7 @@ Greenhouse gas emissions data, which forms a key part of climate reporting, can 
 
 The concept of blockchain as a distributed ledger technology (DLT) first appeared with the release of Bitcoin’s whitepaper in 2008 (Nakamoto, 2008). While early focus was directed towards the wastefulness of its energy consumption, the UNFCCC (2017) has since established the potential of blockchain technology to address climate change. Blockchains and distributed ledgers could provide the infrastructure necessary to uniquely and transparently record climate data, including carbon emissions, green financial instrument trades, and climate action commitments. The integration of these disparate, possibly private, data sources (emissions, trades, and commitments) in a single, cryptographically-verified ledger forms the basis of  ‘system of systems’ approaches, such as the Open Climate platform proposed by Wainstein et al. (2019).
 
-</p>Blockchains supporting cryptocurrencies, in particular Ethereum, have become experimental grounds for various green projects, such as automated carbon emissions recording and offsetting (Chen, 2018). The use of cryptocurrencies to incentivize green behavior is a design pattern noted by Herweijer et al. (2018) and has been implemented by projects such as Power Ledger and Swytchx. These platforms allow companies to create different types of digital green assets, such as energy consumption and production records, CO2e measures of carbon offset or liability, and Renewable Energy Credits, which may be traded or retired at a later point (Power Ledger, 2020; Swytchx, 2019). Cryptocurrencies thus allow for more than a simple record of financial transactions on blockchains, creating instead an economic space where user contributions are rewarded with a token native to the platform. Such tokens are often traded in exchanges or allow their bearers to pay for services, giving rise to autonomous circular economies.
-</p>
+Blockchains supporting cryptocurrencies, in particular Ethereum, have become experimental grounds for various green projects, such as automated carbon emissions recording and offsetting (Chen, 2018). The use of cryptocurrencies to incentivize green behavior is a design pattern noted by Herweijer et al. (2018) and has been implemented by projects such as Power Ledger and Swytchx. These platforms allow companies to create different types of digital green assets, such as energy consumption and production records, CO2e measures of carbon offset or liability, and Renewable Energy Credits, which may be traded or retired at a later point (Power Ledger, 2020; Swytchx, 2019). Cryptocurrencies thus allow for more than a simple record of financial transactions on blockchains, creating instead an economic space where user contributions are rewarded with a token native to the platform. Such tokens are often traded in exchanges or allow their bearers to pay for services, giving rise to autonomous circular economies.
 
 ## The Blockchain for Climate Action Tracking (B-CAT) Framework
 
@@ -57,14 +56,12 @@ PreciDatos is a technological component of B-CAT and was conceived during the Op
 
 All actors wishing to participate in the PreciDatos system must come together in a blockchain consortium. A blockchain consortium is a permissioned blockchain network comprising and maintained by multiple organization-level actors. In the consortium, we consider the following three actor types:
 
-<ul>
- 	<li style="font-weight: 400;">Honest actors with accurate data: These actors have meaningful climate action goals, and the financial and technical resources to measure and report progress towards them. 
-</li>
- 	<li style="font-weight: 400;">Honest actors with inaccurate data: Many actors set and aim to track progress towards their targets, but face obstacles in the form of limited staff capacity, changes in political climates, or the cost of implementing and recording commitments. Data reported by these actors can be very difficult and time-intensive to clean and analyze, and may not contain sufficient information to be included in climate action analyses.    
-</li>
- 	<li style="font-weight: 400;">Greenwashing actors: Some actors may intentionally disclose inaccurate data (e.g., the Volkswagen emissions reporting scandal (Hotten, 2015)) or make goals that do not represent a meaningful share of their overall emissions footprint. For instance, an investor may make a commitment to reduce the emissions from buildings that house its day-to-day operations, but fail to address the much larger share of emissions embedded in its investment portfolio. A large oil and gas company may make an investment in clean energy, without sharing the context that this constitutes just a small fraction of its overall investments, which still disproportionately fund fossil fuels.
-</li>
-</ul>
+- **Honest actors with accurate data**:
+  These actors have meaningful climate action goals, and the financial and technical resources to measure and report progress towards them.
+- **Honest actors with inaccurate data**:
+  Many actors set and aim to track progress towards their targets, but face obstacles in the form of limited staff capacity, changes in political climates, or the cost of implementing and recording commitments. Data reported by these actors can be very difficult and time-intensive to clean and analyze, and may not contain sufficient information to be included in climate action analyses.
+- **Greenwashing actors**:
+  Some actors may intentionally disclose inaccurate data (e.g., the Volkswagen emissions reporting scandal (Hotten, 2015)) or make goals that do not represent a meaningful share of their overall emissions footprint. For instance, an investor may make a commitment to reduce the emissions from buildings that house its day-to-day operations, but fail to address the much larger share of emissions embedded in its investment portfolio. A large oil and gas company may make an investment in clean energy, without sharing the context that this constitutes just a small fraction of its overall investments, which still disproportionately fund fossil fuels.
 
 ### Staking
 
@@ -78,16 +75,11 @@ For honest actors with accurate data: The staked amount is returned in full, wit
 
 An actor submits a report by committing to the following pieces:
 
-<ul>
- 	<li>Data resources (any format)
-</li>
- 	<li>Report metadata (type of report, level of detail)
-</li>
- 	<li>Stake
-</li>
- 	<li>Committee members
-</li>
-</ul>
+- Data resources (any format)
+- Report metadata (type of report, level of detail)
+- Stake
+- Committee members
+
 Ideally, the stake should broadly correspond to the amount and granularity of the data: larger reports take longer to process or find flaws, while in the worst case of fraudulent data reports investigations are more costly. The actor commits to the report by digitally signing it on the blockchain.
 
 ### Standardized Data Format
@@ -95,42 +87,18 @@ Ideally, the stake should broadly correspond to the amount and granularity of th
 We define the ideal standard data format for each report type. Note that companies may decide not to follow the standard data format, using their staked funds or potential reward to pay for standardization. The data schema should have a sub-schema within it that can differ for various use cases. For example, a plastics clean-up report would have a different sub-schema from a solar power generation report.
 The approximate structure (pseudocode style) of the schema and its fields would look like this:
 
-<ul>
- 	<li>Date
-</li>
- 	<li>Digital signature
-</li>
- 	<li>Staked amount
-</li>
- 	<li>Report
+- Date
+- Digital signature
+- Staked amount
+- Report
+  - Sub-schema
+    - List of claims
+      - Would be most simple if only considering emission reduction commitments as opposed to other commitment types (i.e., renewable energy installation, energy efficiency) but this system could start with emission reductions and then be scaled to other commitment types.
+      - Emission reduction commitment (percent reduction, base year, target year, boundary/scope (e.g., location of emission reductions, specific sectors that are included/not included)
+      - Progress on emission reduction commitment (inventory year emissions disaggregated by Scope (Scope 1, 2, 3) (must be at least 1 year later than the base year inventory emissions)
+    - Proofs of claims
+      - Electricity bills, renewable electricity generation, employee commuting records, disclosure reports by climate databases (e.g. CDP), inventory audits, data collected from Internet-of-Things (IoT) devices, etc.
 
-<ul>
- 	<li>Sub-schema
-
-<ul>
- 	<li>List of claims
-
-<ul>
- 	<li style="font-weight: 400;">Would be most simple if only considering emission reduction commitments as opposed to other commitment types (i.e., renewable energy installation, energy efficiency) but this system could start with emission reductions and then be scaled to other commitment types.
-</li>
- 	<li style="font-weight: 400;">Emission reduction commitment (percent reduction, base year, target year, boundary/scope (e.g., location of emission reductions, specific sectors that are included/not included)
-</li>
- 	<li style="font-weight: 400;">Progress on emission reduction commitment (inventory year emissions disaggregated by Scope (Scope 1, 2, 3) (must be at least 1 year later than the base year inventory emissions)
-</li>
-</ul>
-</li>
- 	<li style="font-weight: 400;">Proofs of claims
-
-<ul>
- 	<li style="font-weight: 400;">Electricity bills, renewable electricity generation, employee commuting records, disclosure reports by climate databases (e.g. CDP), inventory audits, data collected from Internet-of-Things (IoT) devices, etc.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 The report and invoice data may make use of homomorphic encryption to allow for privacy, while still being able to compute aggregate data (see Discussion).
 
 ### Challenging
@@ -139,73 +107,31 @@ The report and invoice data may make use of homomorphic encryption to allow for 
 
 The data may be challenged on the grounds that it is not well-formed, in the case of an honest actor with inaccurate data. All parties participating in this consortium, including both the payers and payees, need to validate a submission. This includes the following:
 
-<ul>
- 	<li>Digital signature verification
+- Digital signature verification
+  - The signature has been signed by the submitter
+  - The signature is valid for the data submitted
+- Schema
+  - That the format of the submission is valid according to the schema
+  - That the format of select parts of the submission is valid for the specific sub-schema for the use case used by members of this consortium
+- Application of business rules
+  - Various parts of the submitted data need to be verified according to business rules specific to the use case used by this consortium
+    - For example, the calculations used to work out how much is payable per unit of work used
+  - Various parts of the submitted data need to tally with the invoiced amount
+  - Any automatic verification of proofs of claims
+    - For example, comparing to known sources of data such as weather reports, satellite data, and any custom sensors that have been installed
 
-<ul>
- 	<li>The signature has been signed by the submitter
-</li>
- 	<li>The signature is valid for the data submitted
-</li>
-</ul>
-</li>
- 	<li style="font-weight: 400;">Schema
-
-<ul>
- 	<li>That the format of the submission is valid according to the schema
-</li>
- 	<li>That the format of select parts of the submission is valid for the specific sub-schema for the use case used by members of this consortium
-</li>
-</ul>
-</li>
- 	<li style="font-weight: 400;">Application of business rules
-
-<ul>
- 	<li>Various parts of the submitted data need to be verified according to business rules specific to the use case used by this consortium
-
-<ul>
- 	<li>For example, the calculations used to work out how much is payable per unit of work used
-</li>
-</ul>
-</li>
- 	<li>Various parts of the submitted data need to tally with the invoiced amount
-</li>
- 	<li>Any automatic verification of proofs of claims
-
-<ul>
- 	<li style="font-weight: 400;">For example, comparing to known sources of data such as weather reports, satellite data, and any custom sensors that have been installed
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 Any party participating in the consortium, upon completing validation, is expected to, in most cases, discover that a submission is valid. However, in some cases, it may discover that the submission is in fact invalid. In this latter scenario, that party may decide to issue a challenge.
 
 ### Signalling
 
 A party that has performed validation, found a submission to be invalid, and decided to challenge it, will signal its challenge to all members of the consortium. The intended effect of signalling this challenge is to state that the submission cannot be accepted by the consortium, and thus to trigger an investigation into the claims. The approximate structure (pseudo code style) of the schema and its fields of the signal should look as follows:
 
-<ul>
- 	<li>Date
-</li>
- 	<li>Zero-knowledge proof of membership
-</li>
- 	<li>Staked amount
-</li>
- 	<li>Report
-
-<ul>
- 	<li>Sub-schema
-
-<ul>
- 	<li>Proofs of contradictions of claims
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+- Date
+- Zero-knowledge proof of membership
+- Staked amount
+- Report
+  - Sub-schema
+    - Proofs of contradictions of claims
 
 In order to avoid unnecessary or frivolous investigations -- since these are assumed to require significant time or resource investments -- a staking mechanism is introduced. This is where the party submitting the challenge also deposits an amount as part of the challenge signal. This deposit amount from the challenging party, along with the amount that is owed to the submitting party, is locked up in an escrow mechanism.
 
@@ -261,20 +187,13 @@ Figure 5. Process flow diagram of a solar energy farm reporting power production
 We use an example of a solar energy farm which is required to report its daily power production. We also assume that this farm is a corporation with 5 executives. Each executive registers their cryptographic identity into an Ethereum smart contract based on Semaphore, a zero-knowledge signalling gadget, so that anyone can anonymously prove their membership in the set and broadcast a counterclaiming signal (Koh, 2019).
 
 We then simulate the following process of the company reporting data, along with a deposit, for five days in a row, and an executive anonymously counterclaiming on data reported on the fifth day. This locks up part of the total deposit. After an investigation (outside the system), an investigator then seizes part of the total amount deposited, and rewards part of the seized funds to a separate address specified by the counterclaimer.
-<ol>
- 	<li style="text-align: left;">On day 1, the solar farm publishes their true power readings on a smart contract and deposits 0.1 ETH along with the data.
-</li>
- 	<li style="text-align: left;">The solar farm does the same for days 2, 3, and 4.
-</li>
- 	<li style="text-align: left;">On day 5, however, the solar farm reports false power readings.
-</li>
- 	<li style="text-align: left;">Alice, an executive in the corporation, decides to counterclaim on this false reading. She produces a zero-knowledge proof of her membership in the set of executives, states that the readings of day 5 are fraudulent, and publishes it. Most importantly, the proof does not reveal Alice’s identity.
-</li>
- 	<li style="text-align: left;">The smart contract locks up 0.2 ETH of deposits pending the results of an external investigation.
-</li>
- 	<li style="text-align: left;">We assume that the investigator is a trusted third party. They hold the administrative private key with which they can unlock the farm’s deposit, or trigger the confiscation of said funds. Alice is rewarded a portion of the deposit for correctly counterclaiming, with this portion determined by the rules agreed upon, and saved in the smart contract. In this demo, she is rewarded 0.1 ETH. For the sake of anonymity, we assume that her payout address, specified along with the zero-knowledge proof, is unlinked to the address used to register her identity.
-</li>
-</ol>
+
+1. On day 1, the solar farm publishes their true power readings on a smart contract and deposits 0.1 ETH along with the data.
+1. The solar farm does the same for days 2, 3, and 4.
+1. On day 5, however, the solar farm reports false power readings.
+1. Alice, an executive in the corporation, decides to counterclaim on this false reading. She produces a zero-knowledge proof of her membership in the set of executives, states that the readings of day 5 are fraudulent, and publishes it. Most importantly, the proof does not reveal Alice’s identity.
+1. The smart contract locks up 0.2 ETH of deposits pending the results of an external investigation.
+1. We assume that the investigator is a trusted third party. They hold the administrative private key with which they can unlock the farm’s deposit, or trigger the confiscation of said funds. Alice is rewarded a portion of the deposit for correctly counterclaiming, with this portion determined by the rules agreed upon, and saved in the smart contract. In this demo, she is rewarded 0.1 ETH. For the sake of anonymity, we assume that her payout address, specified along with the zero-knowledge proof, is unlinked to the address used to register her identity.
 
 ## Discussion
 
