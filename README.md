@@ -14,25 +14,23 @@ Data is crucial for tracking these voluntary commitments by cities and companies
 
 ## Challenges of Climate Data Tracking
 
-<p>Tracking climate data remains challenging, for the reasons outlined below:
-</p>
+Tracking climate data remains challenging, for the reasons outlined below:
 
-<i>Existing methods of data collection and analysis are time-consuming, inconsistent, inefficient, and costly.
-</i> The process of reporting progress towards mitigation, adaptation, or finance targets can be a time-consuming and challenging process. CDP estimates that completing its annual Supply Chain Questionnaire takes a corporation over 100 hours (Andersen, 2015). Many mitigation commitments, for instance, rely on emissions inventories, which rely on an actor’s activity data (e.g., the fuel combustion in stationary sources) multiplied by emissions factors, the greenhouse gas emissions produced for each fuel type or by a specific activity (Hsu et al., In Submission). Gathering and calculating all this data requires significant expertise, capacity, and time; some evidence suggests that the daunting requirements needed to conduct a greenhouse gas emissions inventory can prevent actors from implementing a climate action strategy (Markolf et al., 2017). Actors also often participate in several networks with different reporting requirements, leading to reporting fatigue or failure to report altogether, as a result of limited resources to develop timely and regular GHG inventory reports.  
-
+*Existing methods of data collection and analysis are time-consuming, inconsistent, inefficient, and costly.*
+The process of reporting progress towards mitigation, adaptation, or finance targets can be a time-consuming and challenging process. CDP estimates that completing its annual Supply Chain Questionnaire takes a corporation over 100 hours (Andersen, 2015). Many mitigation commitments, for instance, rely on emissions inventories, which rely on an actor’s activity data (e.g., the fuel combustion in stationary sources) multiplied by emissions factors, the greenhouse gas emissions produced for each fuel type or by a specific activity (Hsu et al., In Submission). Gathering and calculating all this data requires significant expertise, capacity, and time; some evidence suggests that the daunting requirements needed to conduct a greenhouse gas emissions inventory can prevent actors from implementing a climate action strategy (Markolf et al., 2017). Actors also often participate in several networks with different reporting requirements, leading to reporting fatigue or failure to report altogether, as a result of limited resources to develop timely and regular GHG inventory reports.  
 
 Moreover, the data that is collected often varies significantly both within and across different reporting platforms (see Figure 1). Actors report varying target years, base years, and baselines for evaluating impact (Hsu et al., 2019), making it challenging for analysts to compare or aggregate the impact of climate action commitments. They also often focus on different kinds of data. For instance, there is a great deal of variation across commitments to reduce greenhouse gas emissions: some commitments cover direct or Scope 1 emissions, which measure direct emissions from sources owned or operated by the actor, such as a furnace or boiler that directly combusts fossil fuels; while others cover indirect emissions, which reflect emissions from purchased electricity, heat, or steam (Scope 2), or emissions embedded upstream or downstream in an actor’s supply chain (Scope 3) (Fong et al., 2015).  Many sectors or categories are often excluded from emissions inventories, but form a large part of actors’ emissions footprints (Hsu et al., In Submission). For instance, many cities and companies exclude Scope 3 emissions from their inventories, despite the fact that they often form a significant share of these actors’ total emissions (Ramaswami et al., 2008; PBPS, 2015; Kennedy et al., 2009). The role that forests and agriculture play as carbon sinks or sources are also challenging to quantify (Ramankutty et al., 2006), and often missing from inventories as a result. 
 
+*Tracking progress towards climate action commitments remains challenging, due to gaps and inconsistencies in reporting.*
+Ideally, data tracking climate commitments and progress towards them would be available across multiple years. In practice, although some data reporting platforms and networks ask participants to track progress towards their commitments, only a small fraction of participating actors do so (Hsu et al., 2018; Hsu et al., 2019). Even when actors share data of their progress, such as the percentage of emissions reductions or renewable energy achieved, it can be inconsistent over different years, making it difficult to track performance over time. Additionally, vital contextual information, such as an actor’s overall emissions or energy mix, is often missing, making the assessment of impact difficult (Hsu et al., 2019).
 
-<i>Tracking progress towards climate action commitments remains challenging, due to gaps and inconsistencies in reporting
-</i>. Ideally, data tracking climate commitments and progress towards them would be available across multiple years. In practice, although some data reporting platforms and networks ask participants to track progress towards their commitments, only a small fraction of participating actors do so (Hsu et al., 2018; Hsu et al., 2019). Even when actors share data of their progress, such as the percentage of emissions reductions or renewable energy achieved, it can be inconsistent over different years, making it difficult to track performance over time. Additionally, vital contextual information, such as an actor’s overall emissions or energy mix, is often missing, making the assessment of impact difficult (Hsu et al., 2019).
+*Incentives are not aligned across reporting organizations.*
 
+Many actors may participate in several different platforms in order to gain access to different benefits and networks (see Figure 1). Others may not be able to justify the allocation of scarce resources to join these efforts based on existing -- and often intangible -- incentives. Motivations can also vary across different actors -- companies in the consumer goods sector, for instance, may be highly attuned to their reputation among consumers, while others sectors, such as the chemicals industry, may be more insulated from public opinion, and more responsive to factors such as investor pressure (Rust, 2019).
 
-<i>Incentives are not aligned across reporting organizations.
-</i>Many actors may participate in several different platforms in order to gain access to different benefits and networks (see Figure 1). Others may not be able to justify the allocation of scarce resources to join these efforts based on existing -- and often intangible -- incentives. Motivations can also vary across different actors -- companies in the consumer goods sector, for instance, may be highly attuned to their reputation among consumers, while others sectors, such as the chemicals industry, may be more insulated from public opinion, and more responsive to factors such as investor pressure (Rust, 2019).
+*Some emissions data are considered sensitive and could reveal proprietary information.*
 
-<i>Some emissions data are considered sensitive and could reveal proprietary information.
-</i>Greenhouse gas emissions data, which forms a key part of climate reporting, can be proprietary or confidential. In some governance contexts, emissions data may be politically sensitive. Many companies hesitate to report on or share sustainability innovations, to avoid tipping off potential competitors, out of a concern that customers equate sustainability with cost increases, or out of a fear of inviting scrutiny into other areas of the company’s operations (Coburn, 2019). If a company reports an intensity-based metric alongside baseline or inventory greenhouse gas information, for example, it could be possible for competitors to determine the company’s production costs, or other data that could harm the reporting business’s competitive advantages. CDP, the primary reporting platform for businesses, gives companies the option to report on their climate action commitments privately rather than publicly, a strategy that may help address these concerns.    
+Greenhouse gas emissions data, which forms a key part of climate reporting, can be proprietary or confidential. In some governance contexts, emissions data may be politically sensitive. Many companies hesitate to report on or share sustainability innovations, to avoid tipping off potential competitors, out of a concern that customers equate sustainability with cost increases, or out of a fear of inviting scrutiny into other areas of the company’s operations (Coburn, 2019). If a company reports an intensity-based metric alongside baseline or inventory greenhouse gas information, for example, it could be possible for competitors to determine the company’s production costs, or other data that could harm the reporting business’s competitive advantages. CDP, the primary reporting platform for businesses, gives companies the option to report on their climate action commitments privately rather than publicly, a strategy that may help address these concerns.    
 
 
 <img class="wp-image-15849 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/Screen-Shot-2020-02-27-at-12.37.14-PM.png"  /> Figure 1. Existing processes of data collection, processing, and analysis for commitments to mitigate greenhouse gas emissions, made by cities, regions, companies, and investors.
@@ -225,9 +223,7 @@ As members of the consortium do not necessarily want each other to know who has 
 </h4>
 While the immutability of records stored in blockchains provides guarantees against falsification, it does not protect against an initial falsification at the time of input. Data may be falsified by the reporting actors, and challenging may be individually damaging to the counterclaimer. The mechanism offers economic incentives and an anonymous yet verifiable procedure for an informed counterclaimer to act. A counterclaimer is different from a validation-challenger (above) in the following ways: They are an individual, rather than an organisation, and they are able to provide proofs of contradictory evidence.
 
-
-<p>When a submission contains a proof for a particular claim, and the counterclaimer has evidence that this proof is fraudulent in some way, that person may decide to signal a challenge containing details of said proofs, using a procedure similar to the one used by organisations. Just like an organisation challenge, the counterclaimer challenge will contain a deposit amount, and staking mechanisms remain the same.
-</p>
+When a submission contains a proof for a particular claim, and the counterclaimer has evidence that this proof is fraudulent in some way, that person may decide to signal a challenge containing details of said proofs, using a procedure similar to the one used by organisations. Just like an organisation challenge, the counterclaimer challenge will contain a deposit amount, and staking mechanisms remain the same.
 
 As a counterclaimer is likely to be an individual within an organisation (that is itself a member of the consortium), and quite likely to be an employee or a contractor, they have a strong incentive not to counterclaim out of fear of retribution, such as the cancellation of employment or contract. In order to protect against this, the signal submitted by the counterclaimer will contain a zero-knowledge proof that verifies that the counterclaimer is a member associated with a member of the consortium, without the need to reveal their own identity.
 
@@ -360,50 +356,46 @@ Companies participating in a consortium are incentivized directly proportional t
 
 ## Glossary
 
-<b>Blockchain </b>is a particular type of data structure used in some distributed ledgers which stores and transmits data in packages called “blocks” that are connected to each other in a digital “chain”. Blockchain employs cryptographic and algorithmic methods to record and synchronize data across a network in an immutable manner (Natarajan et al., 2017).
+**Blockchain** is a particular type of data structure used in some distributed ledgers which stores and transmits data in packages called “blocks” that are connected to each other in a digital “chain”. Blockchain employs cryptographic and algorithmic methods to record and synchronize data across a network in an immutable manner (Natarajan et al., 2017).
 
 
-<b>Bounty </b>is a sum paid out for a particular task done. This can be done through fiat money or tokens inherent to the ecosystem.
+**Bounty** is a sum paid out for a particular task done. This can be done through fiat money or tokens inherent to the ecosystem.
 
 
-For something to be
-<b>cryptographically-secure</b>, it has to be verifiable through cryptographic techniques.
+For something to be **cryptographically-secure**,
+it has to be verifiable through cryptographic techniques.
 
 
-For something to be
-<b>cryptographically-verifiable</b>, it can be checked through public hashes and computed independently to check that the hashes are accurate.
+For something to be **cryptographically-verifiable**,
+it can be checked through public hashes and computed independently to check that the hashes are accurate.
 
 
-<b>Digital signature</b> is a process that guarantees that the contents of a message have not been altered in transit. This is achieved through encryption techniques.
+**Digital signature** is a process that guarantees that the contents of a message have not been altered in transit. This is achieved through encryption techniques.
 
 
-<b>Distributed Ledger Technology </b>refers to a novel and fast-evolving approach to recording and sharing data across multiple data stores (or ledgers). This technology allows for transactions and data to be recorded, shared, and synchronized across a distributed network of different network participants (Natarajan et al., 2017).
+**Distributed Ledger Technology** refers to a novel and fast-evolving approach to recording and sharing data across multiple data stores (or ledgers). This technology allows for transactions and data to be recorded, shared, and synchronized across a distributed network of different network participants (Natarajan et al., 2017).
 
 
-<b>Homomorphic Encryption</b> is a form of encryption that allows computation on encrypted data, generating an encrypted result which, when decrypted, matches the result of the operations as if they had been performed on the original data.
+**Homomorphic Encryption** is a form of encryption that allows computation on encrypted data, generating an encrypted result which, when decrypted, matches the result of the operations as if they had been performed on the original data.
 
 
-<b>Metadata </b>is a set of data that gives information about other data.
+**Metadata** is a set of data that gives information about other data.
 
 
-<b>On-chain </b>transactions refer to transactions that occur on the blockchain itself. This would be computed using nodes that run the blockchain network.
+**On-chain** transactions refer to transactions that occur on the blockchain itself. This would be computed using nodes that run the blockchain network.
 
 
-A
-<b>signalling gadget</b> is a toolkit to allow users to register an identity, verify it, and create proofs.
+A **signalling gadget** is a toolkit to allow users to register an identity, verify it, and create proofs.
 
 
-<b>Staking </b>is the process of putting up some form of value as a guarantee to a claim.
+**Staking** is the process of putting up some form of value as a guarantee to a claim.
 
 
-<b>Tokens </b>are a unit of value issued by the ecosystem and exist in the form of registry entries in the blockchain.
+**Tokens** are a unit of value issued by the ecosystem and exist in the form of registry entries in the blockchain.
 
 
-<b>Zero-knowledge proofs</b> are a method by which one party can prove to another party that they know a value
-<i>x
-</i>, without conveying any information apart from the fact that they know the value
-<i>x
-</i>.
+**Zero-knowledge proofs** are a method by which one party can prove to another party that they know a value *x*,
+without conveying any information apart from the fact that they know the value *x*.
 
 <h2></h2>
 
@@ -435,15 +427,13 @@ Data-Driven EnviroLab. (2019). National Science Foundation Grant will Support Re
 <a href="https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/">https://datadrivenlab.org/projects/national-science-foundation-grant-will-support-research-on-blockchains-potential-climate-action-applications/
 </a>.
 
-
 Data-Driven EnviroLab. (2020). Collaboration gets Radical at COP-25: Digital Solutions to Tracking Climate Action. Available:
 <a href="https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/">https://datadrivenlab.org/climate/collaboration-gets-radical-at-cop-25-digital-solutions-to-tracking-climate-action/
 </a>.
 
 
 Fong, W. K., Sotos, M., Michael Doust, M., Schultz, S., Marques, A., &amp; Deng-Beck, C. (2015). Global protocol for community-scale greenhouse gas emission inventories (GPC).
-<i>World Resources Institute: New York, NY, USA
-</i>.
+*World Resources Institute: New York, NY, USA*.
 <a href="https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities">https://ghgprotocol.org/greenhouse-gas-protocol-accounting-reporting-standard-cities
 </a>. 
 
