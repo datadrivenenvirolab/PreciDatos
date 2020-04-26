@@ -1,19 +1,19 @@
-<h1>PreciDatos: A Blockchain-based System for Incentivizing Actors to Disclose Accurate Climate Data</h1>
+# PreciDatos: A Blockchain-based System for Incentivizing Actors to Disclose Accurate Climate Data
 
+## Abstract
 
-<h2><span style="font-weight: 400;">Abstract </span></h2>
 Cities, states and regions, companies, and investors play a critical role in meeting the urgent need to reduce emissions and transition to a decarbonized society and economy. They are directly taking climate actions by setting their own emissions reduction targets, establishing their own renewable energy targets, and committing to ambitious goals like striving for net-zero emissions by mid-century. Data is crucial for tracking these voluntary commitments by these actors. It can help us understand what actors’ climate commitments are and whether they are following through, thereby providing accountability and preventing greenwashing. However, tracking climate data remains challenging--it is costly, inefficient, and inconsistent. Distributed ledger technology could provide the infrastructure necessary to tackle these challenges. We propose a blockchain-based data reporting system that economically incentivizes actors to disclose accurate data using zero-knowledge proofs. The system may be further extended to include homomorphic encryption and Natural Language Processing (NLP) modules for greater privacy and more efficient data preprocessing. 
-<h2></h2>
-<h2><span style="font-weight: 400;">Introduction</span></h2>
 
-Policymakers’ slow response to climate change has made the next decade a make-or-break moment for avoiding the most catastrophic impacts of climate change. The 2015 Paris Agreement sets a goal of keeping global temperature rise “well below” 2°C compared to preindustrial levels, with further efforts to prevent global temperatures from rising past 1.5°C. Yet the gap between what countries have pledged to do to reduce greenhouse gas emissions and what they need to do to meet the Paris Agreement goals has grown four-fold since 2010 (Höhne et al., 2020). 
+## Introduction
+
+Policymakers’ slow response to climate change has made the next decade a make-or-break moment for avoiding the most catastrophic impacts of climate change. The 2015 Paris Agreement sets a goal of keeping global temperature rise “well below” 2°C compared to preindustrial levels, with further efforts to prevent global temperatures from rising past 1.5°C. Yet the gap between what countries have pledged to do to reduce greenhouse gas emissions and what they need to do to meet the Paris Agreement goals has grown four-fold since 2010 (Höhne et al., 2020).
 
 Cities, states and regions, companies, and investors play a critical role in meeting the urgent need to reduce emissions and transition to a decarbonized society and economy. They are directly taking climate actions by setting their own emissions reduction targets, establishing their own renewable energy targets, and committing to ambitious goals like striving for net-zero emissions by mid-century. As of February 2020, the Global Climate Action Portal, which collects climate action commitments that these actors have made across the world’s largest reporting platforms, included 17,284 actors making over 25,000 commitments (UNFCCC, 2020), a dramatic rise from the 5,000 actors captured by the platform in 2015 (Hsu et al., 2015). If fully implemented, existing city, region, and company commitments made in ten of the world’s largest economies could narrow the emissions gap by 1.2-2.0 gigatonnes of carbon dioxide, an amount equivalent to roughly 4% of current global emissions. (NewClimate Institute et al., 2019).
 
 Data is crucial for tracking these voluntary commitments by cities and companies. It can help us understand what actors’ climate commitments are and whether they are following through, thereby providing accountability and preventing greenwashing. Understanding the full scope of participation in climate action also ensures that the needs and perspectives of different climate actors are reflected in global policy agendas. For instance, research suggests that existing climate action reporting platforms do not fully capture climate action underway in emerging and developing economies (Hsu et al., 2015; Hsu et al., 2018; ClimateSouth, 2018). Data can be one way of documenting climate action and ensuring these stakeholders have a voice in global agenda-setting as well as access to financial and technical resources through knowledge and best-practice sharing networks, such as the C40 Cities for Climate Leadership (C40 Cities) or CDP (formerly Carbon Disclosure Project). Further, such information can facilitate efforts for cities and companies to identify peers and potential partners, supporting efforts to create coalitions focused around a shared goal, or to exchange approaches and strategies with peer actors. Finally, data can allow national governments to create policy environments that encourage and support climate action from cities and the private sector. Countries can also leverage information about voluntary local, regional and corporate action to increase national ambition, by scaling up successful strategies, integrating them into national policies, and replicating them in other locations.
 
-<h2></h2>
-<h2><span style="font-weight: 400;">Challenges of Climate Data Tracking</span></h2>
+## Challenges of Climate Data Tracking
+
 <p><span style="font-weight: 400;">Tracking climate data remains challenging, for the reasons outlined below: </span></p>
 
 <i><span style="font-weight: 400;">Existing methods of data collection and analysis are time-consuming, inconsistent, inefficient, and costly.</span></i><span style="font-weight: 400;"> The process of reporting progress towards mitigation, adaptation, or finance targets can be a time-consuming and challenging process. CDP estimates that completing its annual Supply Chain Questionnaire takes a corporation over 100 hours (Andersen, 2015). Many mitigation commitments, for instance, rely on emissions inventories, which rely on an actor’s activity data (e.g., the fuel combustion in stationary sources) multiplied by emissions factors, the greenhouse gas emissions produced for each fuel type or by a specific activity (Hsu et al., In Submission). Gathering and calculating all this data requires significant expertise, capacity, and time; some evidence suggests that the daunting requirements needed to conduct a greenhouse gas emissions inventory can prevent actors from implementing a climate action strategy (Markolf et al., 2017). Actors also often participate in several networks with different reporting requirements, leading to reporting fatigue or failure to report altogether, as a result of limited resources to develop timely and regular GHG inventory reports.  </span>
@@ -27,23 +27,27 @@ Data is crucial for tracking these voluntary commitments by cities and companies
 <i><span style="font-weight: 400;">Some emissions data are considered sensitive and could reveal proprietary information. </span></i><span style="font-weight: 400;">Greenhouse gas emissions data, which forms a key part of climate reporting, can be proprietary or confidential. In some governance contexts, emissions data may be politically sensitive. Many companies hesitate to report on or share sustainability innovations, to avoid tipping off potential competitors, out of a concern that customers equate sustainability with cost increases, or out of a fear of inviting scrutiny into other areas of the company’s operations (Coburn, 2019). If a company reports an intensity-based metric alongside baseline or inventory greenhouse gas information, for example, it could be possible for competitors to determine the company’s production costs, or other data that could harm the reporting business’s competitive advantages. CDP, the primary reporting platform for businesses, gives companies the option to report on their climate action commitments privately rather than publicly, a strategy that may help address these concerns.    </span>
 
 <img class="wp-image-15849 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/Screen-Shot-2020-02-27-at-12.37.14-PM.png"  /> Figure 1. Existing processes of data collection, processing, and analysis for commitments to mitigate greenhouse gas emissions, made by cities, regions, companies, and investors.
-<h2></h2>
-<h2><span style="font-weight: 400;">Opportunities for Distributed Ledger Technology (DLT)</span></h2>
-The concept of blockchain as a distributed ledger technology (DLT) first appeared with the release of Bitcoin’s whitepaper in 2008 (Nakamoto, 2008). While early focus was directed towards the wastefulness of its energy consumption, the UNFCCC (2017) has since established the potential of blockchain technology to address climate change. Blockchains and distributed ledgers could provide the infrastructure necessary to uniquely and transparently record climate data, including carbon emissions, green financial instrument trades, and climate action commitments. The integration of these disparate, possibly private, data sources (emissions, trades, and commitments) in a single, cryptographically-verified ledger forms the basis of  ‘system of systems’ approaches, such as the Open Climate platform proposed by Wainstein et al. (2019). 
+
+## Opportunities for Distributed Ledger Technology (DLT)
+
+The concept of blockchain as a distributed ledger technology (DLT) first appeared with the release of Bitcoin’s whitepaper in 2008 (Nakamoto, 2008). While early focus was directed towards the wastefulness of its energy consumption, the UNFCCC (2017) has since established the potential of blockchain technology to address climate change. Blockchains and distributed ledgers could provide the infrastructure necessary to uniquely and transparently record climate data, including carbon emissions, green financial instrument trades, and climate action commitments. The integration of these disparate, possibly private, data sources (emissions, trades, and commitments) in a single, cryptographically-verified ledger forms the basis of  ‘system of systems’ approaches, such as the Open Climate platform proposed by Wainstein et al. (2019).
 
 </p><span style="font-weight: 400;">Blockchains supporting cryptocurrencies, in particular Ethereum, have become experimental grounds for various green projects, such as automated carbon emissions recording and offsetting (Chen, 2018). The use of cryptocurrencies to incentivize green behavior is a design pattern noted by Herweijer et al. (2018) and has been implemented by projects such as Power Ledger and Swytchx. These platforms allow companies to create different types of digital green assets, such as energy consumption and production records, CO2e measures of carbon offset or liability, and Renewable Energy Credits, which may be traded or retired at a later point (Power Ledger, 2020; Swytchx, 2019). Cryptocurrencies thus allow for more than a simple record of financial transactions on blockchains, creating instead an economic space where user contributions are rewarded with a token native to the platform. Such tokens are often traded in exchanges or allow their bearers to pay for services, giving rise to autonomous circular economies. </span></p>
-<h2></h2>
-<h2><span style="font-weight: 400;">The Blockchain for Climate Action Tracking (B-CAT) Framework</span></h2>
+
+## The Blockchain for Climate Action Tracking (B-CAT) Framework
+
+
 <span style="font-weight: 400;">The increasing recognition of blockchain’s potential to tackle climate change has led to the development of the Blockchain for Climate Action Tracking (B-CAT) framework by a group of academics, blockchain experts, and entrepreneurs. Supported by the National Science Foundation’s Science of Science Policy and Innovation Program, B-CAT identifies the key actors in the climate action ecosystem and maps out the blockchain design components necessary for incentivizing these actors to fill existing data and knowledge gaps (Data-Driven EnviroLab, 2019). Building on that earlier research, this whitepaper proposes a specific technological solution for use within the B-CAT framework, and suggests directions for prototype-building so as to expedite the development and adoption of blockchain as well as other emerging technologies for stronger climate action beyond 2020.</span>
-<h2></h2>
-<h2><span style="font-weight: 400;">Proposed System </span></h2>
+
+## Proposed System 
 
 Our proposed system, PreciDatos, is a blockchain-based data reporting system that economically incentivizes actors to disclose accurate climate data. Here we define ‘accurate data’ as data that is valid (i.e., complete and in a structured format) and truthful (i.e., not corrupted by the reporter). Utilizing zero-knowledge proofs and a staking mechanism, the system ensures validity and truthfulness--and hence accuracy--of data, providing an auditable and verified dataset for increased transparency. The system may be further extended to include homomorphic encryption and Natural Language Processing (NLP) modules for greater privacy and more efficient data preprocessing.
 
 PreciDatos is a technological component of B-CAT and was conceived during the Open Climate Collabathon 2019. It was later presented at a COP25 side event in Madrid titled ‘Radical Collaboration For Climate Change: Digital Solutions for Tracking Progress,’ where it won the Most Innovative Award (Data-Driven EnviroLab, 2020). 
 
-<h2></h2>
-<h2><span style="font-weight: 400;">System Architecture</span></h2>
+
+## System Architecture
+
 <h3></h3>
 <h3><span style="font-weight: 400;">Types of actors</span></h3>
 <span style="font-weight: 400;">All actors wishing to participate in the PreciDatos system must come together in a blockchain consortium. A blockchain consortium is a permissioned blockchain network comprising and maintained by multiple organization-level actors. In the consortium, we consider the following three actor types:</span>
@@ -57,7 +61,7 @@ PreciDatos is a technological component of B-CAT and was conceived during the Op
 
 There is no obvious reward for actors to implement robust data reporting practices, nor is there a penalty for poor reporting. Moreover, actors benefit in reputation from the act of reporting itself, regardless of the quality. We propose that actors stake some funds in order to commit to the quality of their data. Staking in this case refers to the process of locking funds on a blockchain to participate in the system. The stake can come in the form of cryptocurrency, or fiat money with an on-chain record of that commitment. The mechanism should guard against penalizing too harshly companies who do not fulfill their commitments, as this would incentivize lower commitments altogether.
 
-For honest actors with accurate data: The staked amount is returned in full, with the possibility of including a reward, depending on available funds (see Discussion). For honest actors with inaccurate data: The staked amount covers additional data processing steps should they be required, paying for bounties or open-sourcing the work. For greenwashing actors: The staked amount is used to produce an investigation into the accuracy of the data when counterclaiming takes place. These outcomes are summarized in Figure 2, and described in detail subsequently. 
+For honest actors with accurate data: The staked amount is returned in full, with the possibility of including a reward, depending on available funds (see Discussion). For honest actors with inaccurate data: The staked amount covers additional data processing steps should they be required, paying for bounties or open-sourcing the work. For greenwashing actors: The staked amount is used to produce an investigation into the accuracy of the data when counterclaiming takes place. These outcomes are summarized in Figure 2, and described in detail subsequently.
 
 <img class="wp-image-15854 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/pasted-image-0.png" alt="" width="976" height="1571" /> Figure 2. Illustration of the sequence of actions between various actors in the PreciDatos system.
 <h3></h3>
@@ -181,11 +185,12 @@ Proofs are key in minimizing fraudulent data, and thus are central in any implem
 <h3><span style="font-weight: 400;">Investigation</span></h3>
 
 When a challenge results in an investigation, that investigation should be carried out by an independent auditor using real-world (non-computer) techniques. The auditor, or the auditor selection process, should be pre-agreed upon by the parties in the consortium. Ideally, these auditors should be randomly selected from a pool of qualified auditors. When the investigation is completed, the result of that investigation is input back into the computer system. This input’s primary purpose is to release the amounts locked up in escrow pertaining to the investigation. </span><span style="font-weight: 400;">The input would apportion the fraction of the amount to the challenging party and the submitting party.
- 
+
 If the submission (by the organization) was deemed to be fraudulent, the challengers get all of the deposited amount. If the submission was deemed to be correct, the submitter gets all, or some, of the deposited amount. As with other escrow systems, a portion of the deposited amount will go to neither the submitter nor the challenger, and this is used to pay for the investigation. The exact fraction of the deposit which will be paid out, and to whom, can be programmatically configured to reflect an optimal game-theoretic equilibrium.
 
-<h2></h2>
-<h2><span style="font-weight: 400;">User Flows</span></h2>
+
+## User Flows
+
 <span style="font-weight: 400;">We provide a demonstration of what a typical user flow might look like from the perspective of the potential actors of the platform, namely organizations and individual users. </span>
 
 <span style="font-weight: 400;">Organization’s perspective:</span>
@@ -197,8 +202,9 @@ If the submission (by the organization) was deemed to be fraudulent, the challen
 <img class="size-full wp-image-15851" src="https://datadrivenlab.org/wp-content/uploads/2020/04/Organisation-copy.png" /> Figure 4. User flow from an individual user’s perspective. The user can view existing claims but must be a verified member of the organization in order to successfully challenge them.
 <h2></h2>
 
-<h2><span style="font-weight: 400;">Proof of Concept: Solar Energy Production</span></h2>
-<img class="wp-image-15855 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/SolarFarm_PreciDatos.png"  /> 
+## Proof of Concept: Solar Energy Production
+
+<img class="wp-image-15855 size-full" src="https://datadrivenlab.org/wp-content/uploads/2020/04/SolarFarm_PreciDatos.png"  />
 
 Figure 5. Process flow diagram of a solar energy farm reporting power production data using the PreciDatos system.
 
@@ -213,8 +219,9 @@ We then simulate the following process of the company reporting data, along with
  	<li style="text-align: left;"><span style="font-weight: 400;">The smart contract locks up 0.2 ETH of deposits pending the results of an external investigation.</span></li>
  	<li style="text-align: left;"><span style="font-weight: 400;">We assume that the investigator is a trusted third party. They hold the administrative private key with which they can unlock the farm’s deposit, or trigger the confiscation of said funds. Alice is rewarded a portion of the deposit for correctly counterclaiming, with this portion determined by the rules agreed upon, and saved in the smart contract. In this demo, she is rewarded 0.1 ETH. For the sake of anonymity, we assume that her payout address, specified along with the zero-knowledge proof, is unlinked to the address used to register her identity.</span></li>
 </ol>
-<h2></h2>
-<h2><span style="font-weight: 400;">Discussion</span></h2>
+
+## Discussion
+
 <span style="font-weight: 400;">PreciDatos is built as a modular component to fit in larger operational processes. In the following, we describe possible extensions to complement our data-reporting mechanism. A modular pipeline proposal is presented in Figure 6.</span>
 
 <img class="size-full wp-image-15852" src="https://datadrivenlab.org/wp-content/uploads/2020/04/precidatos-modules.png" /> Figure 6. Extending PreciDatos with optional modules (dotted blocks).
@@ -258,8 +265,9 @@ The additional funds to pay for these extra amounts must come from somewhere. We
 <h3><span style="font-weight: 400;">Payment Rules</span></h3>
 <span style="font-weight: 400;">Companies participating in a consortium are incentivized directly proportional to the work that has been done. A linear scale, while simple to implement and reason about, does little to incentivize increased commitments or higher targets. Consortia that desire their members to increase their commitments might thus do well to alter their payment calculation rules to incorporate some form of target based or commitment based bonus tier. As with the previous section, the exact design of these incentivization structures are left as a discussion for the readers and implementers of this system, as different specific will work for different consortia, and different industries. For rewards, we advocate the use of climate-specific funds (e.g., carbon offsets) to incentivize honest participation in the system.</span>
 <h2></h2>
-<h2></h2>
-<h2><span style="font-weight: 400;">Glossary</span></h2>
+
+## Glossary
+
 <b>Blockchain </b><span style="font-weight: 400;">is a particular type of data structure used in some distributed ledgers which stores and transmits data in packages called “blocks” that are connected to each other in a digital “chain”. Blockchain employs cryptographic and algorithmic methods to record and synchronize data across a network in an immutable manner (Natarajan et al., 2017).</span>
 
 <b>Bounty </b><span style="font-weight: 400;">is a sum paid out for a particular task done. This can be done through fiat money or tokens inherent to the ecosystem.</span>
@@ -286,8 +294,9 @@ The additional funds to pay for these extra amounts must come from somewhere. We
 
 <b>Zero-knowledge proofs</b><span style="font-weight: 400;"> are a method by which one party can prove to another party that they know a value </span><i><span style="font-weight: 400;">x</span></i><span style="font-weight: 400;">, without conveying any information apart from the fact that they know the value </span><i><span style="font-weight: 400;">x</span></i><span style="font-weight: 400;">.</span>
 <h2></h2>
-<h2></h2>
-<h2><span style="font-weight: 400;">References</span></h2>
+
+## References
+
 
 Alabdulatif, Abdulatif, et al. "Privacy-preserving anomaly detection in cloud with lightweight homomorphic encryption." Journal of Computer and System Sciences 90 (2017): 28-45.
 
