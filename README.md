@@ -177,7 +177,9 @@ User’s perspective:
 
 ![PreciDatos user flow for users](./figure-precidatos-user-flow-user.png) Figure 4. User flow from an individual user’s perspective. The user can view existing claims but must be a verified member of the organization in order to successfully challenge them.
 
-## Proof of Concept: Solar Energy Production
+## Proof of Concept
+
+### Descriptive Example: Solar Energy Production
 
 ![PreciDatos PoC diagram](./figure-precidatos-poc-diagram.png)
 Figure 5. Process flow diagram of a solar energy farm reporting power production data using the PreciDatos system.
@@ -192,6 +194,16 @@ We then simulate the following process of the company reporting data, along with
 1. Alice, an executive in the corporation, decides to counterclaim on this false reading. She produces a zero-knowledge proof of her membership in the set of executives, states that the readings of day 5 are fraudulent, and publishes it. Most importantly, the proof does not reveal Alice’s identity.
 1. The smart contract locks up 0.2 ETH of deposits pending the results of an external investigation.
 1. We assume that the investigator is a trusted third party. They hold the administrative private key with which they can unlock the farm’s deposit, or trigger the confiscation of said funds. Alice is rewarded a portion of the deposit for correctly counterclaiming, with this portion determined by the rules agreed upon, and saved in the smart contract. In this demo, she is rewarded 0.1 ETH. For the sake of anonymity, we assume that her payout address, specified along with the zero-knowledge proof, is unlinked to the address used to register her identity.
+
+### Software Example
+
+The above example may be demonstrated using the following software:
+
+- [https://github.com/openclimate-sg/datawhistleblowing](https://github.com/openclimate-sg/datawhistleblowing)
+- [https://github.com/openclimate-sg/datawhistleblowing_ui](https://github.com/openclimate-sg/datawhistleblowing_ui)
+
+Note that these are intended for demonstration/ illustration purposes only,
+and are not intended for real-world usage scenarios.
 
 ## Discussion
 
